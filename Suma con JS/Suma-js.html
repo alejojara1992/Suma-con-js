@@ -9,12 +9,17 @@
 </head>
 <body class="cuerpo">
     <div class="operacion">
-        <h1>Suma de 2 numeros</h1>
+        <h1>Operacion de 2 numeros</h1>
         <label for="">Ingrese el primer numero</label>
         <input type="number" placeholder="Ingrese el numero 1" id="numero1">
         <label for="">Ingrese el segundo numero</label>
         <input type="number" placeholder="Ingrese el numero 2" id="numero2">
-        <button class="button" onclick="sumar()" id="boton">Ver resultado</button>
+        <div class="operaciones">
+            <button class="button" onclick="sumar()" id="boton">+</button>
+            <button class="button" onclick="restar()" id="boton">-</button>
+            <button class="button" onclick="multiplicacion()" id="boton">*</button>
+            <button class="button" onclick="division()" id="boton">/</button>            
+        </div>
         <p id="resultado"></p>
         <script src="Suma-js.js"></script>        
     </div>
