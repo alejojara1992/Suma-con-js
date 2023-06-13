@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+*{
+    margin: 0;
+    font-family: 'Kablammo', cursive;
+    font-size: 30px;
+}
+.cuerpo{
+    margin: 0px;
+    padding: 300px;
+    background: rgb(63,110,23);
+    background: radial-gradient(circle, rgba(63,110,23,1) 0%, rgba(25,97,40,1) 35%, rgba(0,0,0,1) 100%);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.operacion{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+}
+.operacion input{
+    border: 0px solid black;
+    border-radius: 45px;
+    background-color: transparent;
+}
+
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0.3em auto;
+  padding: 10px 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #2ecc71;
+}
+.button::before {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .button::after {
+    background: #2ecc71;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .button:hover:after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+  }
+  
